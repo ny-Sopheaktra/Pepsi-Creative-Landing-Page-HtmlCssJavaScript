@@ -89,6 +89,10 @@ header ul li a {
   text-transform: uppercase;
 }
 
+.content .textBox a:hover {
+  transform: scale(1.01);
+}
+
 .content .imgBox {
   width: 600px;
   display: flex;
@@ -146,4 +150,8 @@ header ul li a {
   filter: invert(1);
   margin: 5px 0;
   transform: scale(0.6);
+}
+
+.social-link li a:hover {
+  transform: scale(0.7);
 }
