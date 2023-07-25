@@ -46,6 +46,14 @@ header ul li a {
   margin-left: 40px;
   text-decoration: none;
 }
+
+header ul li a:hover {
+  padding: 0 10px;
+  background: #fff;
+  color: #111;
+  border-radius: 40px;
+}
+
 /* Hero Section Style  */
 .content {
   position: relative;
