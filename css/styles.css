@@ -48,10 +48,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-  padding: 0 10px;
-  background: #fff;
-  color: #111;
-  border-radius: 40px;
+  border-bottom: 1.5px solid #fff;
 }
 
 /* Hero Section Style  */
