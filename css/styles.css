@@ -30,6 +30,10 @@ header {
   align-items: center;
 }
 
+header .logo {
+  position: relative;
+  max-width: 80px;
+}
 header ul {
   position: relative;
   display: flex;
@@ -79,6 +83,7 @@ header ul li a:hover {
 
 .content .textBox p {
   color: #fff;
+  margin-right: 30px;
 }
 
 .content .textBox a {
@@ -159,4 +164,129 @@ header ul li a:hover {
 
 .social-link li a:hover {
   transform: scale(0.7);
+}
+
+@media (max-width: 1075px) {
+  section {
+    padding-bottom: 140px;
+  }
+}
+
+@media (max-width: 993px) {
+  section {
+    padding: 40px;
+    padding-bottom: 140px;
+  }
+
+  header {
+    padding: 20px 40px;
+  }
+
+  header .logo {
+    max-width: 60px;
+  }
+
+  header ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: 0.2s;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  header ul.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header ul li a {
+    display: inline-block;
+    color: #111;
+    font-weight: 400;
+    margin-left: 0;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+
+  header ul li a:hover {
+    border-bottom: 1px solid #111;
+  }
+
+  .toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: url(../images/menu.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .toggle.active {
+    background: url(../images/close.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    filter: invert(1);
+  }
+
+  .content {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
+  .content .textBox {
+    position: relative;
+    max-width: 100%;
+    padding-right: 20px;
+  }
+
+  .content .textBox h2 {
+    font-size: 3em;
+  }
+
+  .content .textBox a {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .content .imgBox {
+    width: 100%;
+    display: flex;
+    padding-right: 0;
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  .content .imgBox img {
+    max-width: 150px;
+  }
+
+  .thumb li img {
+    max-width: 25px;
+  }
+
+  .social-link {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.2);
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
 }
